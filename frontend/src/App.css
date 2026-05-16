@@ -1,0 +1,311 @@
+.page {
+  width: min(1100px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 28px 0 40px;
+}
+
+.auth-page {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 20px;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.app-page {
+  display: grid;
+  gap: 16px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(16, 24, 40, 0.08);
+  border-radius: 20px;
+  box-shadow: 0 18px 40px rgba(20, 32, 48, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+.hero,
+.auth-card,
+.topbar,
+.form-card,
+.table-card {
+  padding: 24px;
+}
+
+.hero h1 {
+  margin: 8px 0 12px;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  line-height: 1.05;
+}
+
+.lead {
+  font-size: 1.03rem;
+  max-width: 44ch;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  color: #0f766e;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.demo-box {
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 16px;
+  background: #eff6f3;
+  border: 1px solid #dbe9e1;
+}
+
+.auth-card {
+  display: grid;
+  gap: 16px;
+}
+
+.tab-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.tab,
+.primary,
+.secondary,
+.star {
+  border: 0;
+  border-radius: 12px;
+  cursor: pointer;
+  font: inherit;
+}
+
+.tab {
+  padding: 12px 14px;
+  background: #edf2f7;
+  color: #334155;
+}
+
+.tab.active {
+  background: #0f766e;
+  color: #fff;
+}
+
+.form {
+  display: grid;
+  gap: 12px;
+}
+
+.form label,
+.form-card label {
+  display: grid;
+  gap: 6px;
+  font-size: 0.95rem;
+  color: #334155;
+}
+
+input,
+select {
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 11px 12px;
+  font: inherit;
+  background: #fff;
+  color: #0f172a;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid rgba(15, 118, 110, 0.22);
+  border-color: #0f766e;
+}
+
+.primary,
+.secondary {
+  padding: 12px 16px;
+}
+
+.primary {
+  background: #0f766e;
+  color: #fff;
+}
+
+.secondary {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.notice {
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 12px;
+}
+
+.notice.error {
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+.notice.success {
+  background: #ecfdf5;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+}
+
+.topbar h2,
+.store-item h4,
+.card h3 {
+  margin: 0;
+}
+
+.muted {
+  color: #64748b;
+}
+
+.stack {
+  display: grid;
+  gap: 16px;
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.search {
+  min-width: 220px;
+}
+
+.store-list {
+  display: grid;
+  gap: 12px;
+}
+
+.store-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.rating-row {
+  display: grid;
+  gap: 8px;
+  justify-items: end;
+  text-align: right;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.star {
+  width: 40px;
+  height: 40px;
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.star.active {
+  background: #f59e0b;
+  color: #111827;
+}
+
+.stats,
+.two-col {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.two-col {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.stat {
+  display: grid;
+  gap: 8px;
+}
+
+.stat strong {
+  font-size: 2rem;
+}
+
+.form-card {
+  display: grid;
+  gap: 12px;
+}
+
+.table-card {
+  display: grid;
+  gap: 18px;
+}
+
+.table-wrap {
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 12px 10px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+  color: #334155;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 900px) {
+  .auth-page,
+  .stats,
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar,
+  .section-head,
+  .store-item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .rating-row {
+    justify-items: start;
+    text-align: left;
+  }
+
+  .search {
+    min-width: 0;
+    width: 100%;
+  }
+}
